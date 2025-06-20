@@ -1,17 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap');
+
 body {
-  background-color: #f0f8ff;
-  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
   text-align: center;
-  padding: 50px;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
 }
-h1 {
-  color: #008080;
+
+.container:hover {
+  transform: scale(1.02);
 }
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background: teal;
+
+.heading {
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
+  color: #ff4e50;
+  margin-bottom: 20px;
+}
+
+.msg {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.love-button {
+  background: #ff4e50;
   color: white;
   border: none;
-  border-radius: 5px;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.love-button:hover {
+  background: #e84545;
+  transform: scale(1.1);
+}
+
+.secret {
+  margin-top: 30px;
+  font-size: 24px;
+  color: #ff1493;
+  font-family: 'Pacifico', cursive;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.secret.show {
+  opacity: 1;
+}
+
+.hide {
+  display: none;
 }
